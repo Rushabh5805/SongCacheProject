@@ -8,7 +8,7 @@ SongCache is an Interface with the abstract methods:
 SongCacheImpl is the implementation of the SongCache Interface. Logic used for the methods:
   Here I have used a HashMap to store all the song Id and the numPlays.
   
-  recordSongPlays(String songId, int numPlays) : Using this method I have just added the songId and numplays into the hashmap if it is not present. And if it is present then we will just add the numPlays to the existing ones.
+  #recordSongPlays(String songId, int numPlays) : Using this method I have just added the songId and numplays into the hashmap if it is not present. And if it is present then we will just add the numPlays to the existing ones.
   
   getPlaysForSong(String songId) : Here we will return the numPlays from the HashMap using the get method of the HashMap.
   
