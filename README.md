@@ -2,7 +2,9 @@
 
 SongCache is an Interface with the abstract methods:
   recordSongPlays(String songId, int numPlays)
+  
   getPlaysForSong(String songId)
+  
   getTopNSongsPlayed(int n)
  
 SongCacheImpl is the implementation of the SongCache Interface. Logic used for the methods:
