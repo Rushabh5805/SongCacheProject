@@ -14,9 +14,9 @@ public class SongCacheImpl implements SongCache {
 
     @Override
     public List<String> getTopNSongsPlayed(int n) {
-        LinkedHashMap<String, Integer> xyz = getSortedMap(songRecord);
+        LinkedHashMap<String, Integer> sortedMap = getSortedMap(songRecord);
         List<String> topNSongs = new ArrayList<>();
-        for(Map.Entry<String, Integer> e : xyz.entrySet()){
+        for(Map.Entry<String, Integer> e : sortedMap.entrySet()){
             if(n>0){
                 topNSongs.add(e.getKey());
                 n--;
