@@ -1,5 +1,8 @@
 import java.util.*;
 
+/**
+ * Implementation of the SongCache interface.
+ */
 public class SongCacheImpl implements SongCache {
     HashMap<String , Integer> songRecord = new HashMap<>();
     @Override
